@@ -1,0 +1,173 @@
+{
+  "app_id": "aigen-1775182733520",
+  "document_version": 1,
+  "sections": {
+    "storefront": {
+      "hotel_name": {
+        "type": "text",
+        "label": "Hotel Name",
+        "value": "The Grand Lumina"
+      },
+      "guest_name": {
+        "type": "text",
+        "label": "Guest Name",
+        "value": "Mr. Raul Jung"
+      },
+      "hotel_logo": {
+        "type": "file",
+        "label": "Hotel Logo",
+        "value": "assets/logo-1775182934103.png",
+        "meta": {
+          "accepted_formats": ["png", "jpg", "svg"],
+          "path": "assets/"
+        }
+      },
+      "background_image": {
+        "type": "file",
+        "label": "Background Image",
+        "value": "assets/hotel_background-1775182802693.png",
+        "meta": {
+          "accepted_formats": ["jpg", "png"],
+          "path": "assets/"
+        }
+      }
+    },
+    "app_settings": {
+      "primary_color": {
+        "type": "color",
+        "label": "Primary Color",
+        "value": "#00b7af"
+      },
+      "secondary_color": {
+        "type": "color",
+        "label": "Secondary Color",
+        "value": "#10181f"
+      },
+      "text_color": {
+        "type": "color",
+        "label": "Text Color",
+        "value": "#ffffff"
+      }
+    },
+    "weather": {
+      "location": {
+        "type": "text",
+        "label": "Location",
+        "value": "San Francisco, CA"
+      },
+      "temperature": {
+        "type": "number",
+        "label": "Current Temp",
+        "value": 68,
+        "meta": { "format": "integer" }
+      },
+      "condition": {
+        "type": "text",
+        "label": "Condition",
+        "value": "Sunny"
+      }
+    },
+    "restaurants": {
+      "type": "collection",
+      "label": "Best Restaurants Nearby",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "name": { "type": "text", "label": "Restaurant Name" },
+        "cuisine": { "type": "text", "label": "Cuisine Type" },
+        "rating": { "type": "number", "label": "Rating" },
+        "image": {
+          "type": "file",
+          "label": "Photo",
+          "meta": { "accepted_formats": ["jpg", "png"], "path": "assets/restaurants/" }
+        }
+      },
+      "value": [
+        {
+          "id": "rest_a1b2c3",
+          "name": "L'Artisan",
+          "cuisine": "French Fine Dining",
+          "rating": 4.9,
+          "image": "assets/restaurant_1-1775182823059.png"
+        },
+        {
+          "id": "rest_d4e5f6",
+          "name": "Sushi Zen",
+          "cuisine": "Authentic Omakase",
+          "rating": 4.8,
+          "image": "assets/restaurant_1-1775182823059.png"
+        }
+      ]
+    },
+    "attractions": {
+      "type": "collection",
+      "label": "Things To Do",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "name": { "type": "text", "label": "Attraction Name" },
+        "distance": { "type": "text", "label": "Distance" },
+        "image": {
+          "type": "file",
+          "label": "Photo",
+          "meta": { "accepted_formats": ["jpg", "png"], "path": "assets/attractions/" }
+        }
+      },
+      "value": [
+        {
+          "id": "attr_m1n2o3",
+          "name": "Modern Art Museum",
+          "distance": "0.5 miles",
+          "image": "assets/attraction_1-1775182845371.png"
+        },
+        {
+          "id": "attr_p4q5r6",
+          "name": "Skyline Gardens",
+          "distance": "1.2 miles",
+          "image": "assets/attraction_1-1775182845371.png"
+        }
+      ]
+    },
+    "tv_guide": {
+      "type": "collection",
+      "label": "TV Guide Highlights",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "channel": { "type": "text", "label": "Channel" },
+        "show": { "type": "text", "label": "Current Show" },
+        "time": { "type": "text", "label": "Time Slot" }
+      },
+      "value": [
+        { "id": "tv_x1y2z3", "channel": "CH 04 - NBC", "show": "Morning News", "time": "8:00 AM - 10:00 AM" },
+        { "id": "tv_a4b5c6", "channel": "CH 12 - ESPN", "show": "SportsCenter", "time": "9:00 AM - 11:00 AM" },
+        { "id": "tv_g7h8i9", "channel": "CH 25 - HBO", "show": "Succession", "time": "10:00 AM - 12:00 PM" }
+      ]
+    },
+    "room_service": {
+      "type": "collection",
+      "label": "Room Service Menu",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "item_name": { "type": "text", "label": "Item Name" },
+        "price": { "type": "number", "label": "Price", "meta": { "format": "currency" } },
+        "image": {
+          "type": "file",
+          "label": "Photo",
+          "meta": { "accepted_formats": ["jpg", "png"], "path": "assets/menu/" }
+        }
+      },
+      "value": [
+        {
+          "id": "menu_r1s2t3",
+          "item_name": "Signature Breakfast",
+          "price": 28.00,
+          "image": "assets/menu_item_1-1775182865699.png"
+        },
+        {
+          "id": "menu_u4v5w6",
+          "item_name": "Lumina Burger",
+          "price": 24.00,
+          "image": "assets/menu_item_1-1775182865699.png"
+        }
+      ]
+    }
+  }
+}

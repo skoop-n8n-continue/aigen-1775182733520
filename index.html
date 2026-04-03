@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel In-Room Display</title>
+    <link rel="stylesheet" href="styles.css?v=hotel123">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <div class="overlay"></div>
+
+        <!-- Background will be set via CSS Variable -->
+        <div class="bg-wrapper"></div>
+
+        <header class="main-header">
+            <div class="hotel-branding">
+                <img id="hotel-logo" src="" alt="Hotel Logo" class="logo">
+                <h1 id="hotel-name"></h1>
+            </div>
+            <div class="weather-widget">
+                <div class="weather-info">
+                    <span id="weather-temp"></span>
+                    <span id="weather-condition"></span>
+                </div>
+                <div id="weather-location" class="location"></div>
+            </div>
+        </header>
+
+        <main class="content-grid">
+            <section class="welcome-section">
+                <h2 class="welcome-msg" id="welcome-msg"></h2>
+                <p class="date-time" id="current-date-time"></p>
+                <div class="cta-banner">
+                    <p>Press <span class="highlight">Home</span> for the Main Menu</p>
+                </div>
+            </section>
+
+            <div class="sidebar">
+                <section class="tv-guide">
+                    <h3>TV Guide Highlights</h3>
+                    <div id="tv-list" class="collection-list"></div>
+                </section>
+
+                <section class="room-service">
+                    <h3>Room Service Highlights</h3>
+                    <div id="menu-list" class="collection-list"></div>
+                    <div class="order-cta">
+                        <span class="phone-icon">📞</span> Dial <span class="highlight">555</span> to Order
+                    </div>
+                </section>
+            </div>
+
+            <section class="main-discovery">
+                <div class="discovery-tabs">
+                    <div class="discovery-section">
+                        <h3>Best Restaurants Nearby</h3>
+                        <div id="restaurant-list" class="horizontal-scroll"></div>
+                    </div>
+                    <div class="discovery-section">
+                        <h3>Things to Do</h3>
+                        <div id="attraction-list" class="horizontal-scroll"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js?v=hotel123"></script>
+</body>
+</html>
